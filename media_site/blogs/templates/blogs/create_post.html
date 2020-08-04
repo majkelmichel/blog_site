@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create blog post</title>
+</head>
+<body>
+    <form action="/info/create_post/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Create post">
+    </form>
+</body>
+</html>
